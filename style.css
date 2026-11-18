@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+    background-color:#c4c4c43b;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#90aa55;
+}
+
+.logo{
+    color: #000000;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+}
+
+.menu li{
+    margin-left:20px;
+}
+
+.menu a{
+    color:#000000;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1509062522246-3755977927d7");
+    background-size:cover;
+    background-position:center;
+    color:rgb(50, 214, 28);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:22px;
+}
+
+.btn{
+    background:#acd124d2;
+    color:rgb(0, 0, 0);
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    background:linear-gradient(to right,#0eb196,#f4f4f43b);
+    text-align:center;
+    margin-bottom:30px;
+    color:#000000;
+}
+
+.about p{
+    background-color: #b6b6b6e5;
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    box-shadow:0 2px 8px rgba(0,0,0,.2);
+    padding:25px;
+    border-radius:10px;
+}
+
+.contact form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact input,
+.contact textarea{
+    padding:12px;
+    border:1px solid #2b865c;
+}
+
+.contact button{
+    background:#3dce91;
+    color:#000000;
+    border:none;
+    padding:12px;
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    background:#70dbc9;
+    color:rgb(0, 0, 0);
+    padding:20px;
+}

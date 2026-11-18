@@ -1,0 +1,77 @@
+.hero{
+    height:100vh;
+    background:url("images/school-banner.jpg") center/cover no-repeat;
+    position:relative;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:800px;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:20px;
+    animation:fadeDown 1s ease;
+}
+
+.hero-content p{
+    font-size:1.3rem;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.primary{
+    background:#0066cc;
+    color:white;
+}
+
+.primary:hover{
+    background:#004ea1;
+}
+
+.secondary{
+    background:#ff9800;
+    color:white;
+}
+
+.secondary:hover{
+    background:#e68900;
+}
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
